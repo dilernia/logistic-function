@@ -8,7 +8,7 @@ shinyServer(function(input, output, session) {
     b0 <- input$b0
     b1 <- input$b1
     vals <- exp(b0 + b1 * pts) / (1 + exp(b0 + b1 * pts))
-    plot(pts, vals, xlim = c(-2.5, 2.5), ylim = c(0, 1), lwd = 2, col = "darkgoldenrod3", type = "l",
+    plot(pts, vals, xlim = c(-2.5, 2.5), ylim = c(0, 1), lwd = 2, col = "dodgerblue", type = "l",
          xlab = "X", ylab = "Prob(Y = 1|X = x)")
   })
   
